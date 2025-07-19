@@ -196,7 +196,7 @@ A: 请检查 `.env` 文件是否正确配置，确认所有必要的环境变量
 本项目基于 [MIT License](./LICENSE) 开源协议。
 
 ## 🙏 致谢
-- 感谢 [imsyy](https://github.com/imsyy) 的原始项目灵感
+- 感谢 [imsyy](https://github.com/imsyy) 的原始项目灵感与支持
 - 感谢所有开源项目的贡献者
 - 感谢所有使用和支持本项目的用户
 
