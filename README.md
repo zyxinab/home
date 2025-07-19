@@ -37,37 +37,25 @@
 - Node.js >= 16.16.0
 - npm >= 8.15.0 或 pnpm >= 7.0.0
 
-### 🛠️ 本地开发
+### 🛠️ 本地开发 与 🌐 部署方式
+
+**由于本人能力及时间有限，仅支持本地静态网页生成，其他方式请自测可用性**
 
 ```bash
 # 克隆项目
 git clone https://github.com/zyxinab/home.git
 cd home
-
 # 安装 pnpm（推荐）
 npm install -g pnpm
-
 # 安装依赖
 pnpm install
-
 # 复制环境变量文件
 cp .env.example .env
-
 # 修改 .env 文件中的配置（重要！）
 # 详见下方配置说明
-
 # 启动开发服务器
 pnpm dev
-
 # 构建生产版本
-pnpm build
-```
-
-### 🌐 部署方式
-**由于本人能力及时间有限，仅支持本地静态网页生成，其他方式请自测可用性**
-#### 传统服务器部署
-```bash
-# 构建项目
 pnpm build
 # 将 dist 目录上传到服务器
 scp -r dist/* user@server:/var/www/html/
@@ -104,7 +92,7 @@ VITE_SONG_ID=""                          # 播放列表 ID
 1. 前往 [高德开放平台](https://console.amap.com/dev/key/app)
 2. 创建 **Web 服务** 类型的 Key（注意不是 Web 端 JS API）
 3. 将 Key 填入 `.env` 文件的 `VITE_WEATHER_KEY`
-4. 如不配置，将自动使用备用天气 API
+4. 如不配置，将自动使用备用天气 API（现已不可用）
 
 ### 🔗 链接配置
 
@@ -119,7 +107,6 @@ VITE_SONG_ID=""                          # 播放列表 ID
   }
 ]
 ```
-
 #### 网站链接
 编辑 `src/assets/siteLinks.json`：
 ```json
@@ -131,8 +118,7 @@ VITE_SONG_ID=""                          # 播放列表 ID
   }
 ]
 ```
-
-图标可从 [xicons.org](https://www.xicons.org) 选择并在 `src/components/Links.vue` 中引入。
+图标可从 [xicons.org](https://www.xicons.org) 选择并在 `src/components/Links.vue` 中引入，现在已原生支持'fa'和'tabler'。
 
 ## 🎨 个性化定制
 ### 🖼️ 更换背景图片
@@ -191,13 +177,10 @@ home/
 ```
 
 ### 🐛 常见问题
-
 **Q: 音乐播放器无法播放？**
 A: 请检查 Meting API 是否可用，可尝试更换其他 API 服务。
-
 **Q: 天气信息显示失败？**
 A: 请检查高德 API Key 是否正确配置，确认是 Web 服务类型的 Key。
-
 **Q: 部署后页面空白？**
 A: 请检查 `.env` 文件是否正确配置，确认所有必要的环境变量都已设置。
 
