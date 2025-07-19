@@ -118,7 +118,7 @@ VITE_SONG_ID=""                          # 播放列表 ID
   }
 ]
 ```
-图标可从 [xicons.org](https://www.xicons.org) 选择并在 `src/components/Links.vue` 中引入，现在已原生支持'fa'和'tabler'。
+图标可从 [xicons.org](https://www.xicons.org) 选择并在 `src/components/Links.vue` 中引入，现在已原生支持`fa`和`tabler`。
 
 ## 🎨 个性化定制
 ### 🖼️ 更换背景图片
