@@ -1,0 +1,68 @@
+// 全局变量和混入
+$primary-color: #409eff;
+$success-color: #67c23a;
+$warning-color: #e6a23c;
+$danger-color: #f56c6c;
+$info-color: #909399;
+
+// 响应式断点
+$mobile: 768px;
+$tablet: 1024px;
+$desktop: 1200px;
+
+// 混入
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+// scss 全局变量
+
+// 响应式布局
+@mixin changeWidth($maxWidth: 1200px) {
+  .container {
+    max-width: $maxWidth;
+  }
+}
+
+// 首次调用
+@include changeWidth;
+
+/* 小于1380px时 */
+@media (max-width: 1380px) {
+  .el-radio-group {
+    justify-content: center !important;
+  }
+}
+
+/* 小于1280px时 */
+@media (max-width: 1280px) {
+  @include changeWidth($maxWidth: 1100px);
+}
+
+/* 小于992px时 */
+@media (max-width: 992px) {
+  @include changeWidth($maxWidth: 900px);
+}
+
+/* 小于720px时 */
+@media (max-width: 720px) {
+
+  // 隐藏元素
+  .xs-hidden {
+    display: none;
+  }
+}

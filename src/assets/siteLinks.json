@@ -1,0 +1,57 @@
+[
+  {
+    "icon": "Blog",
+    "name": "Hello VPS",
+    "link": "https://541143.xyz/"
+  },
+  {
+    "icon": "Server",
+    "name": "VPS Monitor",
+    "link": "https://tz.333666.best/"
+  },
+  {
+    "icon": "Server",
+    "name": "VPS Monitor 2",
+    "link": "https://monitor.333666.best/"
+  },
+  {
+    "icon": "BrandHipchat",
+    "name": "LLM Chat",
+    "link": "https://oi.451304.xyz/"
+  },
+  {
+    "icon": "MailBulk",
+    "name": "Webmail",
+    "link": "https://mail.333666.best/"
+  },
+  {
+    "icon": "Rocketchat",
+    "name": "Web Chat",
+    "link": "https://chat.451304.xyz/"
+  },
+  {
+    "icon": "DeviceWatchStats",
+    "name": "Web Monitor",
+    "link": "https://uptime.333666.best/"
+  },
+  {
+    "icon": "Lock",
+    "name": "Vaultwarden",
+    "link": "https://pw.451304.xyz/"
+  },
+  {
+    "icon": "Cloud",
+    "name": "Openlist Cloud",
+    "link": "https://webdav.333666.best/"
+  },
+  {
+    "icon": "Blog",
+    "name": "VPS World",
+    "link": "https://541143.xyz/world/"
+  },
+  {
+    "icon": "Server",
+    "name": "My VPS",
+    "link": "https://vps.333666.best/"
+  }
+]
